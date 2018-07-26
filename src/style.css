@@ -1,8 +1,53 @@
 body{
     background-color: #333333;
     color: orange;
+
 }
-.mapContainer{
-    width: 640px; 
-    height: 480px;
+h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+#map {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    }
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+.separador{
+    height: 3px;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inputFood{
+   width: 80%;
+}
+.btn-outline-success {
+    color: orange;
+    border-color: orange;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #00A6B2;
+    border-color: #00A6B2;
 }
