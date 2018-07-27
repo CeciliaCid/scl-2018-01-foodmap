@@ -47,8 +47,18 @@
                 </div>
                 <div class="row">
                     <div class="col-12 input">
-                        <input class="form-control mr-sm-2" type="search" placeholder="¿Qué quieres comer?">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+						<div class="input-group">
+							<select class="custom-select" onchange="initMap()" id="inputGroupSelect"  aria-label="">
+							  <option value="restaurante">¿Qué quieres comer?</option>
+							  <option value="fast food">Comida Rápida</option>
+							  <option value="vegetarian">Vegetariana</option>
+							  <option value="peruvian">Peruana</option>
+							  <option value="sushi bar">Sushi</option>
+							  <option value="chinesse">China</option>
+							  <option value="mexican">Mexicana</option>
+							  <option value="arab">Árabe</option>
+							</select>
+						  </div>
                     </div>
                 </div>
             </div> 

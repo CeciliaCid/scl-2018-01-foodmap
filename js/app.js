@@ -1,5 +1,9 @@
 var map;
 var infowindow;
+    var foodOption = document.getElementById("inputGroupSelect");
+    var optionSelected = foodOption.options[foodOption.selectedIndex].value;
+console.log(foodOption);
+
 function initMap() {
   navigator.geolocation.getCurrentPosition(function(pos){
     lat = pos.coords.latitude;
@@ -15,11 +19,15 @@ function initMap() {
   });
 
   infowindow = new google.maps.InfoWindow();
+  
   var request ={
     location : myLatIng,
     radius: 5000,
-    keyword: "(food) AND (cafe) AND (restaurants) AND (restoran) AND (restorant) AND (restaurante) AND (coffe) AND (food) AND (bar) AND (bakery) AND (pasteleria) AND ()"
+    type:  ['restaurant'],
+    keyword: optionSelected
+    
   };
+  console.log(request);
   var service = new google.maps.places.PlacesService(map);
 
    service.nearbySearch(request, function(results, status) {
